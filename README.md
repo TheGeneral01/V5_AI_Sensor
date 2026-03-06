@@ -1,14 +1,23 @@
 The (Unofficial) Documentation of the Vex V5 AI Vision Sensor for C++:
+
 Specifications:
+
 Native Camera Resolution:
+
 640 x 480
 Downscaled to 320 x 240 when detecting objects, likely for backwards compatibility with the previous vision sensor.
+
 Size:
+
 2.495" x 2.125" x 0.89"
+
 Performance:
+
 The AI Vision Sensor is much more susceptible to not detecting targets under abnormal lighting conditions. Performance will vary depending on the color of the object being detected and the color temperature of the environment.
+
 The color temperature of the room has a cubic relationship with the maximum distance an object can be detected.
 Functions:
+
 colorDetection(bool bEnable, bool bMerge = false):
 Accepts an argument of type bool.
 Determines whether the sensor will detect colors.
